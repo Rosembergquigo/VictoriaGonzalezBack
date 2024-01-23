@@ -15,11 +15,30 @@ public class Medida implements Serializable{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private Long id; 
 	private String concepto;
-	private int medida;
 	
 	
+	public Long getId() {
+		return id;
+	}
+
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+
+	public String getConcepto() {
+		return concepto;
+	}
+
+
+	public void setConcepto(String concepto) {
+		this.concepto = concepto;
+	}
+
+
 	private static final long serialVersionUID = 1L;
 	
 	

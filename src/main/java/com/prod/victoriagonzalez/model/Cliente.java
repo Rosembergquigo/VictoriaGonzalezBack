@@ -27,10 +27,13 @@ public class Cliente implements Serializable{
 	private String nombre;
 	private String telefono;
 	private String correo;
-	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-	@JoinColumn(name = "id_medida")
-	private List<Medida> medidas;
+	/*
+	 * @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	 * 
+	 * @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+	 * 
+	 * @JoinColumn(name = "id_medida") private List<Medida> medidas;
+	 */
 	 
 	public Long getId() {
 		return id;
@@ -62,12 +65,10 @@ public class Cliente implements Serializable{
 	public void setCorreo(String correo) {
 		this.correo = correo;
 	}
-	public List<Medida> getMedidas() {
-		return medidas;
-	}
-	public void setMedidas(List<Medida> medidas) {
-		this.medidas = medidas;
-	}
+	/*
+	 * public List<Medida> getMedidas() { return medidas; } public void
+	 * setMedidas(List<Medida> medidas) { this.medidas = medidas; }
+	 */
 	
 	
 }

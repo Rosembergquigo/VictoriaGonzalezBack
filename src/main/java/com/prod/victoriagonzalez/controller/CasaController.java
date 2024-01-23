@@ -7,7 +7,7 @@ import com.prod.victoriagonzalez.model.Casa;
 import com.prod.victoriagonzalez.service.CasaService;
 
 @RestController
-@RequestMapping(path = "/casa")
+@RequestMapping(path = "/api/casa")
 public class CasaController extends CommonController<Casa, CasaService> {
 
 }
